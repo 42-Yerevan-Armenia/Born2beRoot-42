@@ -194,7 +194,7 @@ apt update
 ```
 
 ### Step 4: Configuring *sudo*
-Configure *sudo* . (You can back here after [SSH - Step 3](#step-3-connecting-to-server-via-ssh))
+Configure *sudo* . (You can back here after [SSH - Step 3](#step-3-connecting-to-server-with-ssh))
 ```
 vim /etc/sudoers
 ```
@@ -287,7 +287,7 @@ sudo ufw status
 ```
 
 ### Step 3: Connecting to Server with SSH
-SSH into your VM using Port 4242.
+SSH into your VM using Port 4242. Type the line below into Terminal in your physicall machin.
 ```
 ssh <username>@<ip-address> -p 4242
 ```
