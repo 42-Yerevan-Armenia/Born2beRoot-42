@@ -38,6 +38,7 @@
     - [UFW](#ufw)
     - [SSH](#ssh)
     - [Script monitoring](#script-monitoring)
+9. [Finish](#finish)
 
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
@@ -517,3 +518,10 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 | 6 | Make the script stop running when the server has started up, but without modifying the script itself. | vim monitoring.sh |
 | 7 | Restart the server one last time. | reboot |
 | 8 | At startup, it will be necessary to check that the script still exists in the same place, that its rights have remained unchanged, and that it has not been modified. | I make changes in crontab and didn't modified monitoring.sh |
+
+### Finish
+Turn off your VM. Crate `signature.txt` file and put there your VM key by generating it with below line
+```
+shasum born2beroot.vdi
+```
+After push only `signature.txt` and don't turn it on till evaluation starts.
