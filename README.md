@@ -204,8 +204,8 @@ To limit authentication using *sudo* to 3 attempts *(defaults to 3 anyway)* in t
 Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
 Defaults        passwd_tries=3
 Defaults        badpass_message="<custom-error-message>"
-Defaults	    logfile="/var/log/sudo/sudo.log"
-Defaults	    log_input,log_output
+Defaults	logfile="/var/log/sudo/sudo.log"
+Defaults	log_input,log_output
 Defaults        requiretty
 ```
 >(Why use tty? If some non-root code is exploited (a PHP script, for example), the requiretty option means that the exploit code won't be able to directly upgrade its privileges by running sudo.)
@@ -345,31 +345,33 @@ sudo vim /etc/pam.d/common-password
 >25 password        requisite                       pam_pwquality.so retry=3
 
 To set password minimum length to 10 characters, add below option to the above line.
-```
-minlen=10
-```
+
+>minlen=10
+
 To require password to contain at least an uppercase character and a numeric character:
-```
-ucredit=-1 dcredit=-1
-```
+
+>ucredit=-1 dcredit=-1
+
 To set a maximum of 3 consecutive identical characters:
-```
-maxrepeat=3
-```
+
+>maxrepeat=3
+
 To reject the password if it contains `<username>` in some form:
-```
-reject_username
-```
+
+>reject_username
+
 To set the number of changes required in the new password from the old password to 7:
-```
-difok=7
-```
+
+>difok=7
+
 To implement the same policy on *root*:
-```
-enforce_for_root
-```
+
+>enforce_for_root
+
 Finally, it should look like the below:
->password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
+password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
 
 ### Step 2: Creating a New User
 Create new user.
