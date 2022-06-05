@@ -422,6 +422,7 @@ Check *root*'s scheduled *cron* jobs.
 ```
 sudo crontab -u root -l
 ```
+
 ## Monitoring
 
 You have to create a simple script called `monitoring.sh` It must be developed in bash.
@@ -473,7 +474,7 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 ### Hostname and partitions
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
-| 1 | The hostname is login42. | hostnamectl |
+| 1 | The hostname is `login42`. | hostnamectl |
 | 2 | Modify this hostname by replacing the login with yours, then restart the machine. | hostnamectl set-hostname <new_hostname> or sudo vim /etc/hostname |
 | 3 | Restore the machine to the original hostname. | repeat 2. again |
 | 4 | How to view the partitions for this virtual machine. | lsblk |
@@ -482,39 +483,39 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 ### SUDO
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
-| 1 | Check that the "sudo" program is properly installed on the virtual machine. | dpkg -l | grep sudo |
-| 2 | Assigning your new user to the *sudo* group. | [Step 2](#step-2-adding-user-to-sudo-group) |
+| 1 | Check that the `sudo` program is properly installed on the virtual machine. | dpkg -l | grep sudo |
+| 2 | Assigning your new user to the `sudo` group. | [Step 2](#step-2-adding-user-to-sudo-group) |
 | 3 | Explain the value and operation of sudo using examples of their choice. | [Step 4](#step-4-configuring-sudo) |
-| 4 | Verify that the */var/log/sudo/* folder exists and has at least one file. | cd /var/log/sudo/ |
+| 4 | Verify that the `/var/log/sudo/` folder exists and has at least one file. | cd /var/log/sudo/ |
 | 5 | Check the contents of the files in this folder, You should see a history of the commands used with sudo. | vim sudo.log |
-| 6 | Try to run a command via sudo. See if the file(s) in the */var/log/sudo/* folder have been updated. | vim sudo.log |
+| 6 | Try to run a command via sudo. See if the file(s) in the `/var/log/sudo/` folder have been updated. | vim sudo.log |
 
 ### UFW
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
-| 1 | Check that the "UFW" program is properly installed on the VM. | dpkg -l | grep ufw |
-| 2 | Explain basically what UFW is and the value of using it. | [UFW](#UFW-with-SSH) |
-| 3 | List the active rules in UFW - port 4242. | sudo ufw status verbose |
+| 1 | Check that the `UFW` program is properly installed on the `VM`. | dpkg -l | grep ufw |
+| 2 | Explain basically what `UFW` is and the value of using it. | [UFW](#UFW-with-SSH) |
+| 3 | List the active rules in `UFW` - port 4242. | sudo ufw status verbose |
 | 4 | Add a new rule to open port 8080. | Settings in VirtualBoxVM and allow |
-| 5 | Delete this new rule. | sudo ufw delete *string number* |
+| 5 | Delete this new rule. | sudo ufw delete `string number` |
 
 ### SSH
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
-| 1 | Check that the SSH service is properly installed on the virtual machine. | dpkg -l | grep ssh |
+| 1 | Check that the `SSH` service is properly installed on the virtual machine. | dpkg -l | grep ssh |
 | 2 | Explain basically what SSH is and the value of using it. | [SSH](#ssh)|
-| 3 | Verify that the SSH service only uses port 4242. | [Port](#step-1-installing--configuring-ssh) |
-| 4 | Use SSH in order to log in with the newly created user. You can use a key or a simple password. | ssh <username>@localhost -p 4242 |
-| 5 | Make sure that you cannot use SSH with the "root" user. | ssh root@localhost -p 4242 |
+| 3 | Verify that the `SSH` service only uses port 4242. | [Port](#step-1-installing--configuring-ssh) |
+| 4 | Use `SSH` in order to log in with the newly created user. You can use a key or a simple password. | ssh username@localhost -p 4242 |
+| 5 | Make sure that you cannot use `SSH` with the `root` user. | ssh root@localhost -p 4242 |
 
 ### Script monitoring
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
 | 1 | How their script works by showing you the code. | [Bash](#monitoring) |
-| 2 | What *cron* is. | [Cron](#what-is-cron) |
+| 2 | What `cron` is. | [Cron](#what-is-cron) |
 | 3 | Set up their script so that it runs every 10 minutes from when the server starts. | [Crontab](#cron) |
-| 4 | Once the correct functioning of the script has been verified, ensure that this script runs every 1m. | 23 */1 * * * * sh /path/to/script |
-| 5 | You can run whatever you want to make sure the script runs with dynamic values correctly. | comment line 23 |
+| 4 | Once the correct functioning of the script has been verified, ensure that this script runs every 1m. | Change 10 to 1 |
+| 5 | You can run whatever you want to make sure the script runs with dynamic values correctly. | Comment line 23 |
 | 6 | Make the script stop running when the server has started up, but without modifying the script itself. | vim monitoring.sh |
 | 7 | Restart the server one last time. | reboot |
 | 8 | At startup, it will be necessary to check that the script still exists in the same place, that its rights have remained unchanged, and that it has not been modified. | I make changes in crontab and didn't modified monitoring.sh |
