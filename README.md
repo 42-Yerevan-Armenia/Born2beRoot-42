@@ -19,7 +19,7 @@
 4. [SSH](#ssh)
     - [Step 1: Installing & Configuring SSH](#step-1-installing--configuring-ssh)
     - [Step 2: Installing & Configuring UFW](#step-2-installing--configuring-ufw)
-    - [Step 3: Connecting to Server via SSH](#step-3-connecting-to-server-via-ssh)
+    - [Step 3: Connecting to Server with SSH](#step-3-connecting-to-server-via-ssh)
 5. [User Management](#user-management)
     - [Step 1: Setting Up a Strong Password Policy](#step-1-setting-up-a-strong-password-policy)
        - [Password Age](#password-age)
@@ -162,6 +162,10 @@ Verify whether *sudo* was successfully installed.
 ```
 dpkg -l | grep sudo
 ```
+>Install *vim*.
+```
+apt install vim
+```
 
 ### Step 2: Adding User to *sudo* Group
 Add user to *sudo* group.
@@ -190,11 +194,7 @@ apt update
 ```
 
 ### Step 4: Configuring *sudo*
->Install *vim*.
-```
-apt install vim
-```
-Configure *sudo* .
+Configure *sudo* . (You can back here after [SSH - Step 3](#step-3-connecting-to-server-via-ssh))
 ```
 vim /etc/sudoers
 ```
@@ -286,7 +286,7 @@ Check UFW status.
 sudo ufw status
 ```
 
-### Step 3: Connecting to Server via SSH
+### Step 3: Connecting to Server with SSH
 SSH into your VM using Port 4242.
 ```
 ssh <username>@<ip-address> -p 4242
