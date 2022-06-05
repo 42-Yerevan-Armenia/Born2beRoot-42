@@ -19,7 +19,7 @@
 4. [SSH](#ssh)
     - [Step 1: Installing & Configuring SSH](#step-1-installing--configuring-ssh)
     - [Step 2: Installing & Configuring UFW](#step-2-installing--configuring-ufw)
-    - [Step 3: Connecting to Server with SSH](#step-3-connecting-to-server-via-ssh)
+    - [Step 3: Connecting to Server with SSH](#step-3-connecting-to-server-with-ssh)
 5. [User Management](#user-management)
     - [Step 1: Setting Up a Strong Password Policy](#step-1-setting-up-a-strong-password-policy)
        - [Password Age](#password-age)
