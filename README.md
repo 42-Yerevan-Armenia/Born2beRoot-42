@@ -72,7 +72,7 @@ Once we know how they work, it is a good idea to see all the advantages we get f
 
 ### <a name="What-is-LVM?">What is LVM?</a>
 
-  <a href="">
+  <a href="https://www.techtarget.com/searchdatacenter/definition/logical-volume-management-LVM">
     <img src="https://www.howtogeek.com/wp-content/uploads/2011/02/banner-1.png?width=1198&trim=1,1&bg-color=000&pad=1,1" width="200" height="100">
   </a>
 
@@ -129,7 +129,7 @@ There are three different techniques that SSH uses to encrypt:
 
 **UFW (Uncomplicated Firewall)** is a software application responsible for ensuring that the system administrator can **manage iptables in a simple way**. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device **(netfilter)** without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices. 
 
-### <a name="what-is-cron">What is cron and what is wall <img src="https://cdn2.iconfinder.com/data/icons/symbol-duo-common-9/32/command_prompt-warning-512.png" width="18" height="18"> ?</a>
+### <a name="what-is-cron">What is cron and what is wall <img src="https://cdn-icons-png.flaticon.com/512/4230/4230840.png" width="20" height="20"> ?</a>
 
   <a href="https://compbio.cornell.edu/about/resources/linux-cron-and-crontab/">
     <img src="https://stevenmortimer.com/blog/automating-r-scripts-with-cron/cronjob.png" width="450" height="200" >
@@ -412,13 +412,9 @@ Configure *cron* as *root*.
 ```
 sudo crontab -u root -e
 ```
-To schedule a shell script to run every 10 minutes, replace below line
+To schedule a shell script to run every 10 minutes, add this line to the end
 
->23 # m h  dom mon dow   command
-
-with:
-
->23 */10 * * * * sh /path/to/script
+>*/10 * * * * sh /path/to/script
 
 Check *root*'s scheduled *cron* jobs.
 ```
@@ -448,7 +444,7 @@ Your script must always be able to display the following information:<br/>
 ### Project overview
 |  Nº  | Question | Coommand |
 | :--: | :---------------------------: | :---------: |
-| 1 | How a virtual machine works. | [VM](#VM-work) |
+| 1 | How a virtual machine works. | [VM](#V-M-work) |
 | 2 | Their choice of operating system. | head -n 2 /etc/os-release |
 | 3 | The basic differences between CentOS and Debian. | [Differences](#https://www.educba.com/centos-vs-debian/) |
 | 4 | The purpose of virtual machines. | [VM](#Virtual-Machine) |
