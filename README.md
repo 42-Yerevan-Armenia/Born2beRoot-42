@@ -434,10 +434,6 @@ To schedule a shell script to run every 10 minutes, add this line to the end
 ```
 */10 * * * * sh /path/to/script
 ```
-Check *root*'s scheduled *cron* jobs.
-```
-sudo crontab -u root -l
-```
 
 ## Monitoring
 
@@ -456,6 +452,11 @@ Your script must always be able to display the following information:<br/>
 • The number of users using the server.<br/>
 • The IPv4 address of your server and its MAC (Media Access Control) address.<br/>
 • The number of commands executed with the sudo program.
+
+Last restart :smile:.
+```
+sudo reboot
+```
 
 ## Checklist
 
