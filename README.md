@@ -286,7 +286,25 @@ Check UFW status.
 sudo ufw status
 ```
 
+Add forward rule for VirtualBox.
+
+1. Go to VirtualBox-> Choose the VM->Select Settings 
+2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
+<a>
+    <img src="https://miro.medium.com/max/1342/1*rCj_FeuZ5Rm2abz48qhulg.png">
+</a>
+3. Enter the values as shown:
+<a>
+    <img src="https://miro.medium.com/max/1400/1*61-KSUCFcerO1wPqBcYISg.png">
+</a>
+
+Restart your VM.
+```
+sudo reboot
+```
+
 ### Step 3: Connecting to Server with SSH
+
 SSH into your VM using Port 4242. Type the line below into Terminal in your physicall machin.
 ```
 ssh <username>@<ip-address> -p 4242
@@ -374,7 +392,7 @@ password        requisite                       pam_pwquality.so retry=3 minlen=
 ```
 
 ### Step 2: Creating a New User
-Create new user.
+Create new user. (During the defense)
 ```
 sudo adduser <username>
 ```
@@ -413,9 +431,9 @@ Configure *cron* as *root*.
 sudo crontab -u root -e
 ```
 To schedule a shell script to run every 10 minutes, add this line to the end
-
->*/10 * * * * sh /path/to/script
-
+```
+*/10 * * * * sh /path/to/script
+```
 Check *root*'s scheduled *cron* jobs.
 ```
 sudo crontab -u root -l
