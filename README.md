@@ -195,11 +195,12 @@ apt update
 
 ### Step 4: Configuring *sudo*
 Configure *sudo* . ⤵️(You can back here after [SSH - Step 3](#step-3-connecting-to-server-with-ssh))
+
 ⚠️You risk to loose your project if you type something else in this file and saved it⚠️
 ```
 vim /etc/sudoers
 ```
-🛡️Of you type something wrong, it will show you the error and ask for saving like that🛡️
+🛡️If you type something wrong, it will show you the error and ask for saving like that🛡️
 ```
 sudo visudoers
 ```
