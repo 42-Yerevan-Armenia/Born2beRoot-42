@@ -140,7 +140,7 @@ Once we know a little more about how to build a server inside a Virtual Machine 
 - **Wall:** command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall. 
 
 ## Installation
-At the time of writing, the latest stable version of [Debian](https://www.debian.org/) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* [here](https://www.youtube.com/watch?v=OQEdjt38ZJA&t=1s).
+At the time of writing, the latest stable version of [Debian](https://www.debian.org/) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* ➡️ [here](https://www.youtube.com/watch?v=OQEdjt38ZJA&t=1s).
 
 ## *sudo*
 
@@ -194,9 +194,14 @@ apt update
 ```
 
 ### Step 4: Configuring *sudo*
-Configure *sudo* . (You can back here after [SSH - Step 3](#step-3-connecting-to-server-with-ssh))
+Configure *sudo* . ⤵️(You can back here after [SSH - Step 3](#step-3-connecting-to-server-with-ssh))
+⚠️You risk to loose your project if you type something else in this file and saved it⚠️
 ```
 vim /etc/sudoers
+```
+🛡️Of you type something wrong, it will show you the error and ask for saving like that🛡️
+```
+sudo visudoers
 ```
 ###
 To limit authentication using *sudo* to 3 attempts *(defaults to 3 anyway)* in the event of an incorrect password, add below line to the file. For wrong password warning message. If there is no `/var/log/sudo` folder, create the `sudo` folder inside of `/var/log`. Each inputs & outputs has to be saved in the `/var/log/sudo/sudo.log`. Require `TTY`.
