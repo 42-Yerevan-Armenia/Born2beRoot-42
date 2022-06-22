@@ -204,11 +204,6 @@ vim /etc/sudoers
 ```
 sudo visudo /etc/sudoers
 ```
-If it isn't already installed just do install.
-```
-apt install visudo
-```
-
 ###
 To limit authentication using *sudo* to 3 attempts *(defaults to 3 anyway)* in the event of an incorrect password, add below line to the file. For wrong password warning message. If there is no `/var/log/sudo` folder, create the `sudo` folder inside of `/var/log`. Each inputs & outputs has to be saved in the `/var/log/sudo/sudo.log`. Require `TTY`.
 ```
