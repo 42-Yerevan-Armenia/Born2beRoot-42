@@ -207,7 +207,6 @@ sudo visudo /etc/sudoers
 ###
 To limit authentication using *sudo* to 3 attempts *(defaults to 3 anyway)* in the event of an incorrect password, add below line to the file. For wrong password warning message. If there is no `/var/log/sudo` folder, create the `sudo` folder inside of `/var/log`. Each inputs & outputs has to be saved in the `/var/log/sudo/sudo.log`. Require `TTY`.
 ```
-Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/sbin/bin"
 Defaults        passwd_tries=3
 Defaults        badpass_message="<custom-error-message>"
 Defaults	logfile="/var/log/sudo/sudo.log"
