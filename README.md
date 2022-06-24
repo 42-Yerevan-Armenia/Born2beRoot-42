@@ -545,6 +545,6 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 ### Finish
 Turn off your VM. Crate `signature.txt` file and put there your VM key by generating it with below line
 ```
-shasum born2beroot.vdi
+shasum goinfre/born2beroot.vdi
 ```
 After push only `signature.txt` and don't turn it on till evaluation starts.
