@@ -547,4 +547,10 @@ Turn off your VM. Crate `signature.txt` file and put there your VM key by genera
 ```
 shasum goinfre/born2beroot.vdi
 ```
-After push only `signature.txt` and don't turn it on till evaluation starts.
+As a precaution, you can duplicate the initial VM in order to keep 2 more copy's and after evaluation, if you were evaluated by 1 evaluator (to keep pushed key the same), just delete your `.vdi` and open the copy.
+
+  <a>
+    <img src="https://www.minitool.com/images/uploads/articles/2021/08/vbox-e-file-error-0x80bb0004/vbox-e-file-error-0x80bb0004-7.png">
+  </a>
+
+Really finish 🤪Push only `signature.txt` and don't turn it on till evaluation starts.
