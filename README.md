@@ -295,7 +295,7 @@ Check UFW status.
 ```
 sudo ufw status
 ```
-Remove rule line by line.
+Remove rule for Port 22 line by line.
 ```
 sudo ufw delete 1
 ```
