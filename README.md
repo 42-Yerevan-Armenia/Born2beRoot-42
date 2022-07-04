@@ -215,6 +215,11 @@ Defaults        requiretty
 ```
 >(Why use tty? If some non-root code is exploited (a PHP script, for example), the requiretty option means that the exploit code won't be able to directly upgrade its privileges by running sudo.)
 
+Check if your *sudoers* file properties are declared like `-rwxrwxrwx` change it to `-r--r-----` using below command
+```
+chmod 440 /etc/sudoers
+```
+
 ## SSH
 
 ### Step 1: Installing & Configuring SSH
@@ -289,6 +294,10 @@ sudo ufw allow 4242
 Check UFW status.
 ```
 sudo ufw status
+```
+Remove rule line by line.
+```
+sudo ufw delete 1
 ```
 
 Add forward rule for VirtualBox.
@@ -409,6 +418,10 @@ Verify newly-created user's password expiry information.
 ```
 sudo chage -l <username>
 ```
+Remove user.
+```
+sudo deluser <username>
+```
 
 ### Step 3: Creating a New Group
 Create new *user42* group.
@@ -426,6 +439,10 @@ sudo usermod -aG user42 <username>
 Verify whether user was successfully added to *user42* group.
 ```
 getent group user42
+```
+Remove group.
+```
+sudo groupdel <groupname>
 ```
 
 ## *cron*
