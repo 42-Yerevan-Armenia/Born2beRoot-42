@@ -124,7 +124,7 @@ There are three different techniques that SSH uses to encrypt:
 ### <a name="UFW-with-SSH">How to implement UFW with SSH</a>
  
   <a href="https://www.youtube.com/watch?v=HTlqTogeXoQ&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=3">
-    <img src="https://ninjasecurity.co.in/home/waf.png" width="400" height="100">
+    <img src="https://miro.medium.com/max/1400/1*C1YfDdmeHmVGYdeXjuIoMQ.png" width="300" height="150">
   </a>
 
 **UFW (Uncomplicated Firewall)** is a software application responsible for ensuring that the system administrator can **manage iptables in a simple way**. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device **(netfilter)** without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices. 
