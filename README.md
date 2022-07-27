@@ -123,7 +123,7 @@ There are three different techniques that SSH uses to encrypt:
 
 ### <a name="UFW-with-SSH">How to implement UFW with SSH</a>
  
-  <a href="https://www.youtube.com/watch?v=HTlqTogeXoQ&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=3">
+  <a href="https://www.youtube.com/watch?v=kgWLnELcjCY&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=1">
     <img src="https://miro.medium.com/max/1400/1*C1YfDdmeHmVGYdeXjuIoMQ.png" width="300" height="150">
   </a>
 
