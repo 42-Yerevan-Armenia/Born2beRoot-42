@@ -213,6 +213,7 @@ Defaults	logfile="/var/log/sudo/sudo.log"
 Defaults	log_input,log_output
 Defaults        requiretty
 ```
+`Deafults insults` for fun message 
 >(Why use tty? If some non-root code is exploited (a PHP script, for example), the requiretty option means that the exploit code won't be able to directly upgrade its privileges by running sudo.)
 
 Check if your *sudoers* file properties are declared like `-rwxrwxrwx` change it to `-r--r-----` using below command
@@ -283,11 +284,7 @@ Enable Firewall.
 ```
 sudo ufw enable
 ```
-Configure the rules.
-```
-sudo ufw allow ssh
-```
-Allow incoming connections using Port 4242.
+Configure the rules. Allow incoming connections using Port 4242.
 ```
 sudo ufw allow 4242
 ```
