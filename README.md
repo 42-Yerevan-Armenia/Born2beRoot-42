@@ -105,7 +105,7 @@ APT can work with different back-ends and fron-ends to make use of its services.
 ### <a name="How-to-use-SSH?">How to use SSH?</a>
 
   <a href="https://www.youtube.com/watch?v=HTlqTogeXoQ&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=3">
-    <img src="https://iconarchive.com/download/i89873/alecive/flatwoken/Apps-Terminal-Ssh.ico" width="100" height="100">
+    <img src="https://www.anyviewer.com/screenshot/windows/what-is-ssh.png" width="400" height="200">
   </a>
   
 SSH or **Secure Shell** is a **remote administration protocol that allows users to control and modify their servers** over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client.<br>
