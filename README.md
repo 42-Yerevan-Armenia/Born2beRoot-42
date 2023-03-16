@@ -2,13 +2,13 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-    - [What is a Virtual Machine?](#Virtual-Machine)
-    - [How do VM work?](#V-M-work)
-    - [What is LVM?](#What-is-LVM?)
-    - [What is AppArmor?](#What-is-AppArmor?)
+    - [What is a Virtual Machine?](#virtual-machine)
+    - [How do VM work?](#vm)
+    - [What is LVM?](#what-is-lvm?)
+    - [What is AppArmor?](#what-is-apparmor?)
     - [What is the difference between Apt and Aptitute?](#Apt-and-Aptitute)
     - [How to use SSH?](#How-to-use-SSH?)
-    - [How to implement UFW with SSH?](#UFW-with-SSH)
+    - [How to implement UFW with SSH?](#ufw-with-ssh)
     - [What is cron and what is wall?](#what-is-cron)
 2. [Installation](#installation)
 3. [*sudo*](#sudo)
@@ -43,7 +43,7 @@
 ## Introduction
 You will create your first machine in VirtualBox (or UTM if you can’t use VirtualBox) under specific instructions. Then, at the end of this project, you will be able to set up your own operating system while implementing strict rules.
 
-### <a name="Virtual-Machine">What is a Virtual Machine?</a>
+### <a name="virtual-machine">What is a Virtual Machine?</a>
 
   <a>
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png?20150209215936" width="100" height="100">
@@ -54,7 +54,7 @@ The devices that provide the hardware resources are called **host machines or ho
 <br>
 There can be multiple virtual machines on the same host and each of these will be isolated from the rest of the system. Thanks to this, we can run different operating systems on our machine. For each virtual machine, we can run a different operating system distribution. Each of these operating systems will behave as if they were hosted on a physical device, so we will have the same experience when using an OS on a physical machine and on a virtual machine.
 
-### <a name="V-M-work">How do VM work?</a>
+### <a name="vm">How do VM work?</a>
 
   <a>
     <img src="https://assets.podomatic.net/ts/86/5f/63/ranand12/640x640_12681970.jpg?1520713977" width="100" height="100">
@@ -70,7 +70,7 @@ Once we know how they work, it is a good idea to see all the advantages we get f
    <li>They are <b>easy to implement</b> because they provide mechanisms to clone a virtual machine to another physical device.</li>
 </ul>
 
-### <a name="What-is-LVM?">What is LVM?</a>
+### <a name="what-is-lvm?">What is LVM?</a>
 
   <a href="https://www.techtarget.com/searchdatacenter/definition/logical-volume-management-LVM">
     <img src="https://www.howtogeek.com/wp-content/uploads/2011/02/banner-1.png?width=1198&trim=1,1&bg-color=000&pad=1,1" width="200" height="100">
@@ -84,7 +84,7 @@ By using LVM, **we can expand the storage of any partition** (now known as a log
    <li><b>Logical volume (LV):</b> these devices will be the ones we will use to create file systems, swaps, virtual machines, etc. If the VG is the storage disk, the LV are the partitions that are made on this disk.</li>
 </ul>
 
-### <a name="What-is-AppArmor?">What is AppArmor?</a>
+### <a name="what-is-apparmor?">What is AppArmor?</a>
 
   <a href="https://linuxhint.com/debian_apparmor_tutorial/">
     <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_720/https://ubuntu.com/wp-content/uploads/e956/AppArmor.png" width="180" height="106">
@@ -121,7 +121,7 @@ There are three different techniques that SSH uses to encrypt:
  <li><b>Hashing:</b> another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.</li>
 </ul>
 
-### <a name="UFW-with-SSH">How to implement UFW with SSH</a>
+### <a name="ufw-with-ssh">How to implement UFW with SSH</a>
  
   <a href="https://www.youtube.com/watch?v=kgWLnELcjCY&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=1">
     <img src="https://miro.medium.com/max/1400/1*C1YfDdmeHmVGYdeXjuIoMQ.png" width="300" height="150">
@@ -482,11 +482,11 @@ sudo reboot
 ### Project overview
 |  Nº  | Question | Coommand |
 | :--: | :---------------------------: | :---------: |
-| 1 | How a virtual machine works. | [VM](#V-M-work) |
+| 1 | How a virtual machine works. | [VM](#vm) |
 | 2 | Their choice of operating system. | head -n 2 /etc/os-release |
 | 3 | The basic differences between CentOS and Debian. | [Differences](#https://www.educba.com/centos-vs-debian/) |
-| 4 | The purpose of virtual machines. | [VM](#Virtual-Machine) |
-| 5 | Debian: the difference between aptitude and apt, and what APPArmor is. | [APT](#https://www.tecmint.com/difference-between-apt-and-aptitude/) and [APPArmor](#What-is-AppArmor) |
+| 4 | The purpose of virtual machines. | [VM](#virtualmachine) |
+| 5 | Debian: the difference between aptitude and apt, and what APPArmor is. | [APT](#https://www.tecmint.com/difference-between-apt-and-aptitude/) and [APPArmor](#what-is-apparmor) |
 
 ### Simple setup
 A password will be requested before attempting to connect to this machine. This user must not be root.
@@ -514,7 +514,7 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 | 2 | Modify this hostname by replacing the login with yours, then restart the machine. | hostnamectl set-hostname <new_hostname> or sudo vim /etc/hostname |
 | 3 | Restore the machine to the original hostname. | repeat 2. again |
 | 4 | How to view the partitions for this virtual machine. | lsblk |
-| 4 | How LVM works and what it is all about. | [LVM](#What-is-LVM?) |
+| 4 | How LVM works and what it is all about. | [LVM](#what-is-lvm?) |
 
 ### SUDO
 |  Nº  | Question |  Coommand |
@@ -530,7 +530,7 @@ Check that it has been added and that it belongs to the *sudo* and *user42* grou
 |  Nº  | Question |  Coommand |
 | :--: | :-----------------------------------------------------------: | :---------------------------: |
 | 1 | Check that the `UFW` program is properly installed on the `VM`. | dpkg -l | grep ufw |
-| 2 | Explain basically what `UFW` is and the value of using it. | [UFW](#UFW-with-SSH) |
+| 2 | Explain basically what `UFW` is and the value of using it. | [UFW](#ufw-with-ssh) |
 | 3 | List the active rules in `UFW` - port 4242. | sudo ufw status verbose |
 | 4 | Add a new rule to open port 8080. | Settings in VirtualBoxVM and allow |
 | 5 | Delete this new rule. | sudo ufw delete `string number` |
