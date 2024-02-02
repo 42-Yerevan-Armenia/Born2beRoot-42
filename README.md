@@ -302,7 +302,6 @@ Add forward rule for VirtualBox.
 1. Go to VirtualBox-> Choose the VM->Select Settings 
 2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
 <a>
-
     <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/b2br_network.png">
 </a>
 3. Enter the values as shown:
