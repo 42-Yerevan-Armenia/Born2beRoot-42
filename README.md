@@ -46,7 +46,7 @@ You will create your first machine in VirtualBox (or UTM if you can’t use Virt
 ### <a name="virtual-machine">What is a Virtual Machine?</a>
 
   <a>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png?20150209215936" width="100" height="100">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/VM.png" width="100" height="100">
   </a>
 
 A virtual machine is a **software capable of installing an Operating System within itself, making the OS think that it is hosted on a real computer**. With virtual machines we can create virtual devices that will behave in the same way as physical devices, using their own CPU, memory, network interface and storage. This is possible because **the virtual machine is hosted on a physical device**, which is the one that provides the hardware resources to the VM. The software program that creates virtual machines is **the hypervisor**. The hypervisor is responsible for isolating the VM resources from the system hardware and making the necessary implementations so that the VM can use these resources.<br>
@@ -57,7 +57,7 @@ There can be multiple virtual machines on the same host and each of these will b
 ### <a name="vm">How do VM work?</a>
 
   <a>
-    <img src="https://assets.podomatic.net/ts/86/5f/63/ranand12/640x640_12681970.jpg?1520713977" width="100" height="100">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/Virtual.jpeg" width="100" height="100">
   </a>
 
 Virtualization allow us share a system with multiple virtual environments. The hypervisor manages the hardware system and separate the physical resources from the virtual environments. **The resources are managed followitn the needs, from the host to the guests.** When an user from a VM do a task that requires additional resources from the physical environment, the hypervisor manages the request so that the guest OS could access the resources of the physical environment.<br>
@@ -73,7 +73,7 @@ Once we know how they work, it is a good idea to see all the advantages we get f
 ### <a name="what-is-lvm?">What is LVM?</a>
 
   <a href="https://www.techtarget.com/searchdatacenter/definition/logical-volume-management-LVM">
-    <img src="https://www.howtogeek.com/wp-content/uploads/2011/02/banner-1.png?width=1198&trim=1,1&bg-color=000&pad=1,1" width="200" height="100">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/LVM.png" width="200" height="100">
   </a>
 
 **LVM (Logical Volume Manager)** is an **abstraction layer between a storage device and a file system**. We get many advantages from using LVM, but the main advantage is that we have much more flexibility when it comes to managing partitions. Suppose we create four partitions on our storage disk. If for any reason we need to expand the storage of the first three partitions, we will not be able to because there is no space available next to them. In case we want to extend the last partition, we will always have the limit imposed by the disk. In other words, we will not be able to manipulate partitions in a friendly way. Thanks to LVM, all these problems are solved.<br>
@@ -87,7 +87,7 @@ By using LVM, **we can expand the storage of any partition** (now known as a log
 ### <a name="what-is-apparmor?">What is AppArmor?</a>
 
   <a href="https://linuxhint.com/debian_apparmor_tutorial/">
-    <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_720/https://ubuntu.com/wp-content/uploads/e956/AppArmor.png" width="180" height="106">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/AppArmor.png" width="180" height="106">
   </a>
 
 AppArmor provides **Mandatory Access Control (MAC) security**. In fact, **AppAmor allows the system administrator to restrict the actions that processes can perform**. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.<br>
@@ -96,7 +96,7 @@ In AppArmor, **processes are restricted by profiles**. Profiles can work in comp
 ### <a name="apt-and-aptitute">What is the difference between Apt and Aptitute?</a>
 
   <a href="https://www.tecmint.com/difference-between-apt-and-aptitude/">
-    <img src="https://www.fosslinux.com/wp-content/uploads/2020/10/APT-vs.-APTITUDE.png" width="250" height="150">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/APT.png" width="250" height="150">
   </a>
 
 In Debian-based OS distributions, **the default package manager we can use is dpkg**. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, **APT (Advanced Package Tool)**, which is a tool that uses dpkg, **can be used to install all the necessary dependencies when installing a program**. So now we can install a useful program with a single command.<br>
@@ -105,7 +105,7 @@ APT can work with different back-ends and fron-ends to make use of its services.
 ### <a name="how-to-use-ssh?">How to use SSH?</a>
 
   <a href="https://www.youtube.com/watch?v=HTlqTogeXoQ&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=3">
-    <img src="https://www.anyviewer.com/screenshot/windows/what-is-ssh.png" width="400" height="200">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/SSH.png" width="400" height="200">
   </a>
   
 SSH or **Secure Shell** is a **remote administration protocol that allows users to control and modify their servers** over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client.<br>
@@ -124,7 +124,7 @@ There are three different techniques that SSH uses to encrypt:
 ### <a name="ufw-with-ssh">How to implement UFW with SSH</a>
  
   <a href="https://www.youtube.com/watch?v=kgWLnELcjCY&list=PLjQTJGGLMkUq3p_PCtPaqiUVOvlnkIhiC&index=1">
-    <img src="https://miro.medium.com/max/1400/1*C1YfDdmeHmVGYdeXjuIoMQ.png" width="300" height="150">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/Firewall.png" width="300" height="150">
   </a>
 
 **UFW (Uncomplicated Firewall)** is a software application responsible for ensuring that the system administrator can **manage iptables in a simple way**. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device **(netfilter)** without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices. 
@@ -132,7 +132,7 @@ There are three different techniques that SSH uses to encrypt:
 ### <a name="what-is-cron">What is cron and what is wall <img src="https://cdn-icons-png.flaticon.com/512/4230/4230840.png" width="20" height="20"> ?</a>
 
   <a href="https://compbio.cornell.edu/about/resources/linux-cron-and-crontab/">
-    <img src="https://stevenmortimer.com/blog/automating-r-scripts-with-cron/cronjob.png" width="450" height="200" >
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/cron.png" width="450" height="200" >
 </a>
 
 Once we know a little more about how to build a server inside a Virtual Machine (remember that you also have to look in other pages apart from this README), we will see two commands that will be very helpful in case of being system administrators. These commands are:
@@ -302,11 +302,12 @@ Add forward rule for VirtualBox.
 1. Go to VirtualBox-> Choose the VM->Select Settings 
 2. Choose “Network”-> “Adapter 1"->”Advanced”->”Port Forwarding”
 <a>
-    <img src="https://miro.medium.com/max/1342/1*rCj_FeuZ5Rm2abz48qhulg.png">
+
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/b2br_network.png">
 </a>
 3. Enter the values as shown:
 <a>
-    <img src="https://miro.medium.com/max/1400/1*61-KSUCFcerO1wPqBcYISg.png">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/b2br_ports.png">
 </a>
 
 Restart your VM.
@@ -564,7 +565,7 @@ shasum goinfre/born2beroot.vdi
 As a precaution, you can duplicate the initial VM in order to keep 2 more copy's and after evaluation, if you were evaluated by 1 evaluator (to keep pushed key the same), just delete your `.vdi` and open the copy.
 
   <a>
-    <img src="https://www.minitool.com/images/uploads/articles/2021/08/vbox-e-file-error-0x80bb0004/vbox-e-file-error-0x80bb0004-7.png">
+    <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/VB_hard_disk.png">
   </a>
 
 Really finish 🤪Push only `signature.txt` and don't turn it on till evaluation starts.
