@@ -45,7 +45,7 @@ You will create your first machine in VirtualBox (or UTM if you can’t use Virt
 
 ### <a name="virtual-machine">What is a Virtual Machine?</a>
 
-  <a>
+  <a href="https://www.redhat.com/en/topics/virtualization/what-is-a-virtual-machine">
     <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/VM.png" width="100" height="100">
   </a>
 
@@ -56,7 +56,7 @@ There can be multiple virtual machines on the same host and each of these will b
 
 ### <a name="vm">How do VM work?</a>
 
-  <a>
+  <a href="https://www.youtube.com/watch?v=UBVVq-xz5i0">
     <img src="https://github.com/Aramxxx8691/Git_Images/blob/master/Virtual.jpeg" width="100" height="100">
   </a>
 
