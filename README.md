@@ -140,7 +140,7 @@ Once we know a little more about how to build a server inside a Virtual Machine 
 - **Wall:** command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall. 
 
 ## Installation
-At the time of writing, the latest stable version of [Debian](https://www.debian.org/) is *Debian 10 Buster*. Watch *bonus* installation walkthrough *(no audio)* ➡️ [here](https://www.youtube.com/watch?v=OQEdjt38ZJA&t=1s).
+At the time of writing, the latest stable version of [Debian](https://download.g0tmi1k.com/iso/Debian/Debian-10/debian-10.0.0-amd64-netinst.iso) was *Debian 10 Buster*, but you can chose a lts verion from oficial [page]((https://www.debian.org/))  Watch *bonus* installation walkthrough *(no audio)* ➡️ [here](https://www.youtube.com/watch?v=OQEdjt38ZJA&t=1s).
 
 ## *sudo*
 
